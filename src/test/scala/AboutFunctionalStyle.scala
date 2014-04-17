@@ -64,7 +64,7 @@ ive method is the last one.
     fibonacci(4) should be(__)
   }
 
-  test( """ Exercice : implement the function last, that given a List return the last element using pattern matching """) {
+  ignore( """ Exercice : implement the function last, that given a List return the last element using pattern matching """) {
     def last[A](l: List[A]): A = {
       ???
     }
