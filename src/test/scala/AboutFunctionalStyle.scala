@@ -66,7 +66,11 @@ ive method is the last one.
 
   test( """ Exercice : implement the function last, that given a List return the last element using pattern matching """) {
     def last[A](l: List[A]): A = {
-      ???
+       l match {
+        case Nil => throw new Error
+        case List(e) => e
+        case e :: ee => last(ee)
+      }
     }
 
     last(List(1, 2, 3, 4, 5, 6)) should be(6)
